@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My GuestBook</title>
-</head>
-<body>
+<?php 
+    
+    ini_set("display_errors", "on");
+    require_once "common.inc.php";
 
-</body>
-</html>
+    // $guestBook = new GuestBook(R);
+
+
+   
+
+?>
