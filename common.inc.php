@@ -11,11 +11,11 @@
 
     require_once "rb.php";
     
+    // need a try catch
     R::setup("mysql:host={$cfg['db']['host']};dbname={$cfg['db']['dbname']}",$cfg['db']['username'],$cfg['db']['password']);
+    $query = R::getRedBean();
 
     
-
-
 
 
 ?>

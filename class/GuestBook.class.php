@@ -7,10 +7,11 @@
     {
 
         public $tbName = "guest";
+        public $db = NULL;
         
-        function __construct()
+        function __construct( $db )
         {
-            # code...
+            $this->db = $db;
         }
 
         public function getAll()
