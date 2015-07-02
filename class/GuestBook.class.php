@@ -6,17 +6,23 @@
     class GuestBook
     {
 
-        public $tbName = "guest";
+        public $tbName = "book";
         public $db = NULL;
         
-        function __construct( $db )
+        public function __construct(  )
         {
-            $this->db = $db;
+            // $this->db = $db;
         }
 
-        public function getAll()
+        public function getAll($order="order by id desc",$limit=10)
         {
-            # code...
+            
+            return R::findAll($this->tbName, $order);
+        }
+
+        public function getOne($id)
+        {
+            return R::load($this->tbName, $id);
         }
 
 
