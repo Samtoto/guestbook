@@ -8,7 +8,6 @@
     <title>My guest book</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +43,21 @@
         </div><!--/.container-fluid -->
       </nav>
     
-    
+      <form class="form-inline" action="submit.php" method="post">
+        <div class="form-group">
+          <label for="exampleInputName">Name</label>
+          <input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Sam Lee" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail">Email</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="sam@example.com" value="sam@example.com" />
+        </div>
+        <button type="submit" class="btn btn-default" >Send</button>
+        <div class="form-group" style="margin-top: 20px">
+          <label for="exampleInputText">Content</label>
+          <textarea class="form-control" name="message" rows="3" cols="100" placeholder="Leave a message here"></textarea>
+        </div>
+      </form>
 
 
     </div> <!-- /container -->
@@ -52,7 +65,7 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>

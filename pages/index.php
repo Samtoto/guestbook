@@ -65,9 +65,9 @@
      <?php
 
         foreach ($msgAll as $key => $value) {
-            echo "{$value->id}==>{$value->title}<br />";
-
-            echo "{$value->content}";
+            echo "{$value->id}==>{$value->name}<br />";
+            
+            echo "{$value->message}";
 
             echo "<hr>";
         }

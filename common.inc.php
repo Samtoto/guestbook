@@ -1,6 +1,7 @@
 <?php 
     
     require_once "config.inc.php";
+    require_once "functions.php";
 
     if (!$cfg['debug']) {
         error_reporting(0);
@@ -32,20 +33,6 @@
         return true;
     }
 
-
-    function P($s) 
-    {
-        echo "<pre>";
-        print_r($s);
-        echo "</pre>";
-    }
-
-    function S($s)
-    {   
-        echo "<script type='text/javascript'>window.console.log('";
-        echo $s;
-        echo "')</script>";
-    }
 
 
 
